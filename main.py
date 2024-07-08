@@ -1,5 +1,3 @@
-print("heiio")  # 這適應出hello在終端機
-print("56498")  # 這適應出56498在終端機
-"""
-這是多行註解
-"""
+import streamlit as st
+
+st.title("周尚甫的超級網站")
