@@ -26,7 +26,7 @@ while i < 6:  # 條件式迴圈
     print(i)  # 印出i
     if i == 3:
         break  # 如果i等於3,就跳出一層迴圈
-    i += 1
+    i += 1  # i = i + 1
 
 for i in range(1, 6):  # for 迴圈
     print(i)
@@ -47,3 +47,6 @@ print(random.randrange(1, 10))  # 產生一個1到10的隨機數
 # 但randint一定要設定兩個數字，且會數到結束的數字
 
 # 字串
+
+# random.randint()
+# 且結束的數字會包含在內
