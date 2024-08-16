@@ -8,6 +8,8 @@ for f in files:
     if f.endswith(".md"):  # 如果檔案是以.md結尾
         files_name.append(f)  # 把檔案加到files_name中
 
+files_name.sort()  # 排序
+
 for f in files_name:  # 逐一讀取files_name中的檔案
     with open(f"{folderpath}/{f}", "r", encoding="utf-8") as file:  # 開啟檔案
         content = file.read()  # 讀取檔案內容
