@@ -18,11 +18,10 @@ while True:  # 無窮迴圈
     if num < 0 or num > 100:  # 如果超出範圍
         print("請輸入1-100之間的數字！")
 
-    elif num < ans: #如果輸入小於答案
+    elif num < ans:  # 如果輸入小於答案
         print("太小了，再大一點！")
         if num < max_num:  # 檢查num是否大於max_num
-            max_num = num # 如果num大於max_num就跟新範圍
-    else:
+            max_num = num  # 如果num大於max_num就跟新範圍
 
     elif num > ans:  # 如果超出範圍
         print("太大了，再小一點！")

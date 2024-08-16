@@ -2,7 +2,6 @@ import streamlit as st
 import time
 import os
 
-
 # 設計products字典，每個商品價格(price)和庫存(stock)圖片(image)
 
 import_folder = "image"
@@ -43,7 +42,7 @@ for product_name, details in st.session_state.products.items():
                 time.sleep(1)
                 st.rerun()
             else:
-                st.erron(f"庫存不足")
+                st.error(f"庫存不足")
     i += 1
 
 # 新增商品庫存區塊
@@ -63,3 +62,10 @@ if st.button("新增庫存"):
 st.markdown("目前商品庫存：")
 for product_name, details in st.session_state.products.items():
     st.markdown(f"{product_name}: {details['stock']}件")
+if st.button("購買成功"):
+    st.success("購買成功")
+    time.sleep(1)
+    st.rerun()
+
+if st.button("失敗"):
+    st.error("庫存不足")

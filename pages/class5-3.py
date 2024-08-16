@@ -1,4 +1,8 @@
 import streamlit as st
+from utils import set_background
+
+set_background("image/angry-man.png", 50, "center bottom")
+
 from langchain_openai import ChatOpenAI  # pip install -U langchain-openai
 from langchain_core.messages import HumanMessage, AIMessage  # pip install langchain
 

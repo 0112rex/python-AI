@@ -1,5 +1,10 @@
 import streamlit as st
 
+from utils import set_background
+
+set_background("image/angry-man.png", 50, "center bottom")
+
+
 st.title("數字金字塔")
 number = st.number_input("請輸入一個數(1-9)", step=1, max_value=9, min_value=1)
 st.markdown("數字金字塔")
