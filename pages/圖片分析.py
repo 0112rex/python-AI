@@ -1,4 +1,8 @@
 import streamlit as st
+from utils import set_background
+
+set_background("image/angry-man.png", 50, "center bottom")
+
 import openai
 from utils import load_openai_api, encode_image
 

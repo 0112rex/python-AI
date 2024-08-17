@@ -1,4 +1,8 @@
 import streamlit as st
+from utils import set_background
+
+set_background("image/angry-man.png", 50, "center bottom")
+
 import os
 
 folderpath = "markdown"  # 這是相對路徑, C:\Users\User\Desktop\python-ai\markdown
